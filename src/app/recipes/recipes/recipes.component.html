@@ -1,0 +1,69 @@
+<h2> Taco Recipes</h2>
+<div *ngIf="loaded" class="col-12">
+    <div *ngIf="recipes && recipes.length > 0">  
+        <div>
+            <table id="taco-recipes">
+                <tr >
+                    <td class="title">Name</td>
+                    <td class="title">Taco Shell</td>
+                    <td class="title">Protein</td>
+                    <td class="title">Toppings</td>
+                    <td class="title">Sauce</td>
+                    <td class="title">Instructions</td>
+                </tr>
+                <tr *ngFor="let recipe of recipes" class="row borders">
+                    <td>{{recipe.name}}</td>
+                    <td>{{recipe.tacoShell}}</td>
+                    <td>{{recipe.protein}}</td>
+                    <td>{{recipe.toppings}}</td>
+                    <td>{{recipe.sauce}}</td>
+                    <td>{{recipe.instructions}}</td>
+                    <th>
+                        <span class="blue-link" (click)="editRecipe(recipe)">Edit</span>
+                        <span class="blue-link" (click)="deleteRecipe(recipe)">Delete</span>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div *ngIf="!recipes || (recipes && recipes.length === 0)">
+        {{ noRecipesError}}
+    </div>
+
+    <span class="add-new-button" (click)="showFields = true">Add New Recipe +</span>
+
+</div>
+
+<form *ngIf="showFields" [formGroup]="recipeForm">
+    <div class="fields">
+        <label>Recipe Name</label> <br>
+        <input class="form-control" formControlName="name">
+    </div>
+    <div class="fields">
+        <label>Taco Shell</label><br>
+        <input class="form-control" formControlName="tacoShell">
+    </div>
+    <div class="fields">
+        <label>Protein</label> <br>
+        <input class="form-control" formControlName="protein">
+    </div>
+    <div class="fields">
+        <label>Toppings</label> <br>
+        <input class="form-control" formControlName="toppings">
+    </div>
+    <div class="fields">    
+        <label>Sauce</label> <br>
+        <input class="form-control" formControlName="sauce">
+    </div>
+    <div class="fields">
+        <label>Instructions</label> <br>
+        <input class="form-control" formControlName="instructions">
+    </div>
+
+    <span class="save-button" (click)="saveRecipe()">Save Recipe</span>
+
+</form>
+
+<div style="margin-top: 20px;">Library to add social media links<br>
+<a href="https://github.com/MurhafSousli/ngx-sharebuttons/wiki/Share-Button-Component">Social Media</a></div>

@@ -1,0 +1,31 @@
+{
+  "recipes": [
+    {
+      "id": "Chicken Taco",
+      "name": "Chicken Taco",
+      "tacoShell": "Soft",
+      "protein": "Chicken",
+      "toppings": "Lettuce, Cream Cheese",
+      "sauce": "Medium",
+      "instructions": "Cook until done, Season Properly"
+    },
+    {
+      "id": "Steak Taco",
+      "name": "Steak Taco",
+      "tacoShell": "Hard",
+      "protein": "Meat",
+      "toppings": "Lettuce, Cheese",
+      "sauce": "Hot",
+      "instructions": "Cook and Bake"
+    },
+    {
+      "id": "T4 Taco",
+      "name": "T4 Taco",
+      "tacoShell": "Soft",
+      "protein": "Chicken",
+      "toppings": "Queso, Beans, Lettuce, Cheese",
+      "sauce": "Hot Sauce",
+      "instructions": "Enjoy while going over code :)"
+    }
+  ]
+}

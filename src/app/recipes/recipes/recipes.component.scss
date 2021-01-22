@@ -1,0 +1,68 @@
+.blue-link {
+    cursor: pointer;
+    color:#32b2dc;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+#taco-recipes {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#taco-recipes td {
+    border: 1px solid #ddd;
+    width: 220px;
+    padding: 10px 5px;
+}
+
+#taco-recipes th {
+    width: 200px;
+}
+
+.add-new-button {
+    margin-top: 20px;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    color: #32b2dc;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.save-button {
+    margin-top: 20px;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    color: #32b2dc;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fields {
+    padding: 15px 10px;
+}
+
+.form-control {
+    height: 25px;
+    width: 200px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.title {
+    font-weight: 600;
+}
